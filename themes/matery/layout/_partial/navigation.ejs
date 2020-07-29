@@ -7,6 +7,7 @@
     menuMap.set("About", "关于");
     menuMap.set("Contact", "留言板");
     menuMap.set("Friends", "友情链接");
+    menuMap.set('Weblearns', 'web前端')
 
     var configRoot = config.root
     configRoot = (configRoot === null || configRoot === undefined || configRoot === '/') ? '' : configRoot;
@@ -22,7 +23,7 @@
       <i class="<%- theme.menu[key].icon %>" style="zoom: 0.6;"></i>
       <% } %>
       <span><%- (config.language === 'zh-CN' && menuMap.has(key)) ? menuMap.get(key) : key %></span>
-    </a>
+    </a> 
     <% } else { %>
     <a href="<%- theme.menu[key].url %>" class="waves-effect waves-light">
 
