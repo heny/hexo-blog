@@ -9,7 +9,7 @@ description: '全是干货'
 keywords: [html, css, javascript, vue, react, node, 小程序]
 author: heny
 language: zh-CN
-timezone: ''
+timezone: ''    
 
 favicon: https://notecdn.heny.vip/favicon.ico
 # URL
@@ -135,7 +135,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: hexo-theme-matery
+theme: matery
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
