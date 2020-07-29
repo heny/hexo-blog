@@ -1,3 +1,9 @@
+---
+title: miniProgram
+date: 2020-07-29 23:12:00
+type: miniProgram
+layout: miniProgram
+---
 ## 目录
 
 官方文档：[微信开放文档](https://developers.weixin.qq.com/miniprogram/dev/framework/)
