@@ -1,7 +1,7 @@
 ---
 abbrlink: d977
 title: VS code 使用技巧
-
+categories: vscode
 tags: 
   - vscode
 summary: vscode使用技巧，包含快捷键、常用插件；

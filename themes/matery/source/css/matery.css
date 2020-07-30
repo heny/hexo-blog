@@ -318,18 +318,34 @@ header nav .brand-span {
 }
 
 header .brand-logo .logo-img {
-    height: 45px;
-    vertical-align: middle;
+    height: 35px;
+    /* vertical-align: middle; */
+    vertical-align: -12px;
     padding-bottom: 6px;
 }
 
 header .brand-logo .logo-span {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 /*修改顶部 logo 的文字垂直对齐为 top，避免默认 middle 看起来偏下*/
 header .brand-logo .waves-effect {
     vertical-align: top;
+}
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
 }
 
 header .button-collapse i {

@@ -14,15 +14,8 @@ menu:
     url: /archives
     icon: fas fa-archive
   About:
-    url: /
+    url: /about
     icon: fas fa-user-circle
-    children: 
-      - name: 关于我
-        url: /about
-        icon: fas fa-user-circle
-      - name: Aboutme
-        url: /aboutme
-        icon: fas fa-user-secret
   Contact:
     url: /contact
     icon: fas fa-comments
@@ -30,12 +23,12 @@ menu:
     url: /friends
     icon: fas fa-address-book
   # 二级菜单写法如下
-  Weblearns:
-   icon: fas fa-list
-   children:
-    - name: miniProgram
-      url: /miniProgram
-      icon: fas fa-weixin
+  # Weblearns:
+  #  icon: fas fa-list
+  #  children:
+  #   - name: miniProgram
+  #     url: /miniProgram
+  #     icon: fas fa-weixin
 
 # Website start time.
 # 站点运行开始时间.
@@ -209,13 +202,13 @@ profile:
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myProjects:
-  enable: true
+  enable: false
   data:
-    hexo-theme-matery:
+    ikang-h5:
       icon: fas fa-file-alt
       iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
-      url: http://github.com/blinkfox/hexo-theme-matery
-      desc: This is a Hexo blog theme with 'Material Design' and responsive design.
+      url: https://m.ikang.com/
+      desc: 爱康国宾体检中心是全国知名体检中心,是拥有多年健康体检及健康管理经验的专业综合性健康管理机构；依托爱康网,提供健康体检(男体检/女性体检)、健康检查、企业员工体检等全方位健康管理服务。
     Fenix:
         icon: fas fa-database
         iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
@@ -233,24 +226,24 @@ myProjects:
 mySkills:
   enable: true
   data:
-    Java:
-      background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
-      percent: 85%
     JavaScript:
-      background: 'linear-gradient(to right, #9900FF 0%, #CC66FF 100%)'
+      background: 'linear-gradient(to right, #f1e05a 0%, #f1e05a 100%)'
       percent: 80%
+    Node:
+      background: 'linear-gradient(to right, #FF0066 0%, #FF00CC 100%)'
+      percent: 40%
     HTML5:
-      background: 'linear-gradient(to right, #2196F3 0%, #42A5F5 100%)'
+      background: 'linear-gradient(to right, #e34c26 0%, #e34c26 100%)'
       percent: 80%
     CSS:
-      background: 'linear-gradient(to right, #00BCD4 0%, #80DEEA 100%)'
+      background: 'linear-gradient(to right, #563d7c 0%, #563D7E 100%)'
       percent: 70%
-    SQL:
-      background: 'linear-gradient(to right, #4CAF50 0%, #81C784 100%)'
-      percent: 90%
-    程序设计:
-      background: 'linear-gradient(to right, #FFEB3B 0%, #FFF176 100%)'
-      percent: 75%
+    Vue:
+      background: 'linear-gradient(to right, #41B883 0%, #41B883 100%)'
+      percent: 80%
+    React:
+      background: 'linear-gradient(to right, #202346 0%, #20232a 100%)'
+      percent: 70%
 
 # config gallery of my photos in about page.
 # If you don't want to display this `Gallery` content, you can deactivate or delete this configuration.
@@ -490,7 +483,7 @@ reprint:
 
 # DaoVoice online contact
 daovoice:
-  enable: true
+  enable: false
   app_id: '08143047'
 
 # Tidio online contact

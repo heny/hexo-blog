@@ -4,6 +4,7 @@ title: git
 cover: true
 summary: git常用记录
 categories: git
+top: true
 tags:
    - git
    - vscode
