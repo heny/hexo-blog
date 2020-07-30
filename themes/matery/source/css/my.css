@@ -56,3 +56,12 @@
         transform: translate(0, 0.5px) rotate(1.5deg);
     }
 }
+
+::-webkit-scrollbar {
+    width: 6px;
+    background-color: #e1e1e1;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: linear-gradient(to bottom, #c5c2c2 0%, #b9b9b9 100%);
+}
