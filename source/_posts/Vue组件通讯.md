@@ -3,8 +3,9 @@ title: Vue组件通讯
 cover: true
 categories: Vue
 tags:
-	- vue
+  - vue
 summary: Vue组件常用通讯方法，包含slot插槽，过滤器、自定义指令
+abbrlink: 1f8e
 ---
 
 ## 一、组件通讯

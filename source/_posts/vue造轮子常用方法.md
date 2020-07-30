@@ -4,8 +4,9 @@ cover: true
 categories: Vue
 top: true
 tags:
-	- vue
+  - vue
 summary: vue项目搭轮子常用方法，直接cv可用
+abbrlink: fdfc
 ---
 
 ## 安装脚手脚
