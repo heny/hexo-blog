@@ -454,7 +454,7 @@ music:
   id: 503838841     # require song id / playlist id / album id / search keyword
   fixed: false      # 开启吸底模式
   autoplay: false   # 是否自动播放
-  theme: '#42b983'
+  theme: '#2e64ca'
   loop: 'all'       # 音频循环播放, 可选值: 'all', 'one', 'none'
   order: 'random'   # 音频循环顺序, 可选值: 'list', 'random'
   preload: 'auto'   # 预加载，可选值: 'none', 'metadata', 'auto'

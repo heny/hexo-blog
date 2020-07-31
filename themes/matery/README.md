@@ -450,7 +450,7 @@ music:
   id: 503838841     # require song id / playlist id / album id / search keyword
   fixed: false      # enable fixed mode
   autoplay: false   # audio atuoplay
-  theme: '#42b983'
+  theme: '#2e64ca'
   loop: 'all'       # player loop play, values: 'all', 'one', 'none'
   order: 'random'   # player play order, values: 'list', 'random'
   preload: 'auto'   # values: 'none', 'metadata', 'auto'

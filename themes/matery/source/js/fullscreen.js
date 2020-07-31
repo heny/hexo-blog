@@ -36,8 +36,8 @@ function exitfullscreen() { //退出全屏
   $("#fullscreen").removeClass("fa-desktop").addClass("fa-expand-arrows-alt");
 }
 
-let b = false;
-$('#fullscreen').on('click', function() {
-  b = !b;
-  b ? enterfullscreen() : exitfullscreen();
+let isFullscreen = false;
+$('.nav-menu .fullscreen').on('click', function() {
+  isFullscreen = !isFullscreen;
+  isFullscreen ? enterfullscreen() : exitfullscreen();
 })
