@@ -205,23 +205,23 @@ profile:
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
 # 在“关于”页面配置"我的项目"信息，如果你不需要这些信息则可以将其设置为不激活或者将其删除.
 myProjects:
-  enable: false
+  enable: true
   data:
-    ikang-h5:
-      icon: fas fa-file-alt
-      iconBackground: 'linear-gradient(to bottom right, #66BB6A 0%, #81C784 100%)'
+    爱康国宾:
+      favicon: http://static-m.health.ikang.com/assets/images/common/logo-care.png
       url: https://m.ikang.com/
       desc: 爱康国宾体检中心是全国知名体检中心,是拥有多年健康体检及健康管理经验的专业综合性健康管理机构；依托爱康网,提供健康体检(男体检/女性体检)、健康检查、企业员工体检等全方位健康管理服务。
-    Fenix:
-        icon: fas fa-database
-        iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
-        url: https://github.com/blinkfox/fenix
-        desc: 这是 Spring Data JPA 复杂或动态 SQL 查询的扩展库。
-    typora-vue-theme:
-        icon: fas fa-file-alt
-        iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
-        url: https://github.com/blinkfox/typora-vue-theme
-        desc: This is a typora theme inspired by Vue document style.
+    体检宝:
+        # icon: fas fa-database
+        # iconBackground: 'linear-gradient(to bottom right, #F06292 0%, #EF5350 100%)'
+        favicon: /medias/my-projects/tijianbao.png
+        url: https://m.tijianbao.com/
+        desc: 爱康国宾官方手机网站为您提供体检中心查询、手机预约体检、体检套餐手机购买等手机端健康管理服务。
+    # typora-vue-theme:
+    #     icon: fas fa-file-alt
+    #     iconBackground: 'linear-gradient(to bottom right, #29B6F6 0%, #1E88E5 100%)'
+    #     url: https://github.com/blinkfox/typora-vue-theme
+    #     desc: This is a typora theme inspired by Vue document style.
 
 # config my skills informations in about page.
 # If you don't want to display this `My Skills` content, you can deactivate or delete this configuration.

@@ -11,10 +11,16 @@ var myprojects = theme.myProjects.data;
         <% Object.keys(myprojects).forEach(function(project) { %>
         <div class="col s12 m6 l4" data-aos="fade-up">
             <div class="info center-align">
-                <a href="<%- myprojects[project].url %>" class="icon"
-                   style="background: <%- myprojects[project].iconBackground %>" target="_blank">
-                    <i class="<%- myprojects[project].icon %>"></i>
-                </a>
+                <% if(myprojects[project].favicon) { %>
+                    <a href="<%- myprojects[project].url %>" class="icon" target="_blank">
+                    <img src="<%- myprojects[project].favicon %>" alt="favicon">
+                    </a>
+                <% } else { %>
+                    <a href="<%- myprojects[project].url %>" class="icon"
+                        style="background: <%- myprojects[project].iconBackground %>" target="_blank">
+                         <i class="<%- myprojects[project].icon %>"></i>
+                     </a>
+                <% } %>
                 <div class="info-title">
                     <a href="<%- url_for(myprojects[project].url) %>" target="_blank"><%- project %></a>
                 </div>

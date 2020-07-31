@@ -84,6 +84,7 @@ body .crisp-client .crisp-1rjpbb7 .crisp-ws3gf1, .crisp-client .crisp-1rjpbb7 .c
 }
 
 body .crisp-client .crisp-1rjpbb7[data-last-operator-face=false] .crisp-1rf4xdh .crisp-kquevr .crisp-x94m06 .crisp-16qgsyi .crisp-101bp3x[data-is-ongoing=false] {
+    width: 28px !important;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%);
