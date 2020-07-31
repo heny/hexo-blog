@@ -22,6 +22,9 @@ menu:
   Friends:
     url: /friends
     icon: fas fa-address-book
+  Navigate:
+    url: /navigate
+    icon: fas fa-location-arrow
   # 二级菜单写法如下
   # Weblearns:
   #  icon: fas fa-list
