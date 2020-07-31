@@ -21,12 +21,33 @@
     "title": "前去学习"
   }, 
   {
+    "avatar": "https://cdn.jsdelivr.net/gh/small-rose/small-rose.github.io@master/medias/avatar.jpg",
+    "name": "Small-Rose",
+    "introduction": "JAVA WEB | 道虽迩，不行不至；事虽小，不为不成。",
+    "url": "https://zhangxiaocai.cn",
+    "title": "访问主页"
+  },
+  {
+    "avatar": "https://cdn.jsdelivr.net/gh/Yafine/cdn@latest/source/medias/avatar.jpg",
+    "name": "过客~励む",
+    "introduction": "你现在的努力，是为了以后有更多的选择！",
+    "url": "https://yafine-blog.cn",
+    "title": "前去学习"
+  },
+  {
+    "avatar": "https://gitee.com/dperch/PicGo/raw/master/img/20200319033616.jpg",
+    "name": "栖枝perch🌸",
+    "url": "https://520526.xyz",
+    "introduction": "用心创造设计，改变生活🌸",
+    "title": "前去探索"
+  },
+  {
     "avatar": "http://image.luokangyuan.com/4027734.jpeg",
     "name": "闪烁之狐",
     "introduction": "编程界大佬，技术牛，人还特别好，不懂的都可以请教大佬",
     "url": "https://blinkfox.github.io/",
     "title": "前去学习"
-  }, 
+  },
   {
     "avatar": "http://image.luokangyuan.com/avatar.jpg",
     "name": "ja_rome",
