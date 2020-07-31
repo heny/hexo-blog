@@ -52,6 +52,8 @@
         margin-bottom: -27px;
     }
     .friend-name__intro {
+        position: relative;
+        top: -35px;
         height: 66px;
         display:-webkit-box;    /*旧版弹性盒子;*/
         -webkit-box-orient:vertical;    /*项目往下排;*/
@@ -215,7 +217,7 @@
                                         <img src="<%- url_for(friend.avatar) %>" alt="img">
                                         <div>
                                             <h1 class="friend-name"><%= friend.name %></h1>
-                                            <p style="position: relative;top: -35px;" class='friend-name__intro'><%= friend.introduction %></p>
+                                            <p class='friend-name__intro'><%= friend.introduction %></p>
                                         </div>
                                     </div>
                                     <div class="friend-button">
