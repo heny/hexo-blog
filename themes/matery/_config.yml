@@ -198,7 +198,7 @@ clicklove:
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
   avatar: /medias/avatar.jpg
-  career: Software Engineer
+  career: web前端开发工程师
   introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
 
 # config my projects informations in about page.
@@ -298,17 +298,54 @@ livere:
 # The configuration of the Valine comment module is not activated by default.
 # To use it, activate the configuration item and set appId and appKey.
 # Valine 评论模块的配置，默认为不激活，如要使用，就请激活该配置项，并设置 appId 和 appKey.
-valine:
-  enable: true
-  appId: bbMamizQoA0004uLOKmkyvD9-gzGzoHsz
-  appKey: jSYWVrEz7weGKeHkdmDUVkvx
-  notify: false
-  verify: false
-  visitor: true
-  avatar: 'heny' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
-  pageSize: 10
-  placeholder: 'just go go' # Comment Box placeholder
-  background: /medias/comment_bg.png
+valine: 
+  enable: true 
+  appId: bbMamizQoA0004uLOKmkyvD9-gzGzoHsz 
+  appKey: jSYWVrEz7weGKeHkdmDUVkvx 
+  verify: true # 是否启用防垃圾验证 
+  notify: true # 是否开启邮件提醒(https://valine.js.org/notify.html) 
+  visitor: true 
+  avatar: monsterid # 头像样式(https://valine.js.org/avatar.html) 
+  pageSize: 10 
+  placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!' # Comment Box placeholder 
+  background: /medias/comment_bg.webp #背景图 
+  count: true 
+  enableQQ: 1623246663 
+  recordIP: true 
+  requiredFields: 
+    - nick 
+    - mail 
+  guest_info: 
+    - nick 
+    - mail 
+    - link 
+  master: 
+    - 5d7702c2f11bb4abdbb5842d2f9b8571 # md5加密后的博主邮箱 
+  metaPlaceholder: # 输入框的背景文字 
+    nick: 昵称/QQ号(必填) 
+    mail: 邮箱(必填) 
+    link: 网址(https://) 
+  lang: zh-CN 
+  tagMeta: # The String Array of Words to show Flag.[Just Only xCss Style mode] 
+    - 博主 
+    - 小伙伴 
+    - 访客 
+  friends: # The MD5 String Array of friends Email to show friends Flag.[Just Only xCss Style mode] 
+    - c08508165c8eba9a77f8c2853xxxx09e 
+    - 901345d4c91ddfd8db0f175bbcfff0c8 
+    - 1512958e18378c98b498d5effe3e76ff
+
+# valine:
+#   enable: true
+#   appId: bbMamizQoA0004uLOKmkyvD9-gzGzoHsz
+#   appKey: jSYWVrEz7weGKeHkdmDUVkvx
+#   notify: false
+#   verify: false
+#   visitor: true
+#   avatar: 'heny' # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
+#   pageSize: 10
+#   placeholder: 'just go go' # Comment Box placeholder
+#   background: /medias/comment_bg.png
 
 # The configuration of the MiniValine comment module is not activated by default.
 # To use it, activate the configuration item and set appId and appKey.

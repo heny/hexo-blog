@@ -1686,7 +1686,17 @@ thead {
     max-width: 160px;
     width: 100%;
     margin: 0 auto;
-    transform: translate3d(0, -65%, 0);
+    margin-top: -105px;
+    margin-bottom: 105px;
+    cursor: pointer;
+    /* transform: translate3d(0, -65%, 0); */
+}
+.profile .avatar-img:hover {
+    transform: rotate(666turn);
+    transition-delay: 1s;
+    transition-property: all;
+    transition-duration: 59s;
+    transition-timing-function: cubic-bezier(.34,0,.84,1);
 }
 
 .profile .author {

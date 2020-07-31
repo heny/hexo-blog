@@ -10,6 +10,7 @@
     #vcomments textarea {
         box-sizing: border-box;
         background: url("<%- url_for(theme.valine.background) %>") 100% 100% no-repeat;
+        resize: none;
     }
 
     #vcomments p {
@@ -244,9 +245,12 @@
 </div>
 
 <script src="<%- theme.jsDelivr.url %><%- url_for('/libs/valine/av-min.js') %>"></script>
+<!-- <script src="https://cdn.jsdelivr.net/gh/small-rose/small-rose.github.io/libs/valine/Valine.min.js"></script> -->
 <script src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.valine) %>"></script>
 <script>
-    new Valine({
+    let metaPlaceholder = <%- JSON.stringify(theme.valine.metaPlaceholder) %> ; 
+    //????? 
+    new Valine({ 
         el: '#vcomments',
         appId: '<%- theme.valine.appId %>',
         appKey: '<%- theme.valine.appKey %>',
@@ -255,7 +259,27 @@
         visitor: '<%- theme.valine.visitor %>' === 'true',
         avatar: '<%- theme.valine.avatar %>',
         pageSize: '<%- theme.valine.pageSize %>',
-        lang: '<% if (config.language == "zh-CN") {  %>zh-cn<% } else { %>en<% } %>',
-        placeholder: '<%= theme.valine.placeholder %>'
+        lang: '<%- theme.valine.lang %>',
+        placeholder: '<%= theme.valine.placeholder %>',
+        meta: <%- '["' + theme.valine.guest_info.join('", "') + '"]' %>,
+        recordIP: '<%- theme.valine.recordIP %>' === 'true',
+        enableQQ: '<%- theme.valine.avatar %>',
+        requiredFields: <%- '["' + theme.valine.master.join('", "') + '"]' %>,
+        master: <%- '["' + theme.valine.master.join('", "') + '"]' %>,
+        friends: <%- '["' + theme.valine.friends.join('", "') + '"]' %>,
+        tagMeta: <%- '["' + theme.valine.tagMeta.join('", "') + '"]' %>,
+        metaPlaceholder: metaPlaceholder, 
     });
+    // new Valine({
+    //     el: '#vcomments',
+    //     appId: '<%- theme.valine.appId %>',
+    //     appKey: '<%- theme.valine.appKey %>',
+    //     notify: '<%- theme.valine.notify %>' === 'true',
+    //     verify: '<%- theme.valine.verify %>' === 'true',
+    //     visitor: '<%- theme.valine.visitor %>' === 'true',
+    //     avatar: '<%- theme.valine.avatar %>',
+    //     pageSize: '<%- theme.valine.pageSize %>',
+    //     lang: '<% if (config.language == "zh-CN") {  %>zh-cn<% } else { %>en<% } %>',
+    //     placeholder: '<%= theme.valine.placeholder %>'
+    // });
 </script>

@@ -66,6 +66,7 @@
     background: linear-gradient(to bottom, #c5c2c2 0%, #b9b9b9 100%);
 }
 
+/* -------------- crisp客服修改 ------------------ */
 body .crisp-client .crisp-1rjpbb7 .crisp-1rf4xdh .crisp-ewasyx, .crisp-client .crisp-1rjpbb7 .crisp-1rf4xdh .crisp-kquevr {
     right: 20px !important;
 }
@@ -86,4 +87,28 @@ body .crisp-client .crisp-1rjpbb7[data-last-operator-face=false] .crisp-1rf4xdh 
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%);
+}
+
+
+/* -------------- valine评论修改 ------------------ */
+.v[data-class=v] .vwrap .vheader .vinput {
+    width: 32% !important;
+}
+
+.v[data-class=v] .vwrap .vemojis i {
+    font-style: normal;
+    padding-top: 7px;
+    width: 36px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+@media only screen and (max-width: 992px) and (min-width: 600px) {
+    .v[data-class=v] .vwrap .vheader .vinput {
+        width: 100%!important;
+    }
 }
