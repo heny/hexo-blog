@@ -593,6 +593,7 @@ instantpage:
 # 若为 false, 则 banner 默认为 /medias/banner/0.jpg
 banner:
   enable: true
+  random: true # 是否随机更换, 不随机将按banner数来获取当前图
 
 #ICP备案信息尾部显示
 icp:

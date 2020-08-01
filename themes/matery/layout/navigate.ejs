@@ -110,14 +110,31 @@
 
 </script>
 <% if (theme.banner.enable) { %>
-	<script>
-		// 每天切换 banner 图.  Switch banner image every day.
-		var bannerUrl =
-			"<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" +
-			new Date().getHours() +
-			".jpg"
-		$(".bg-img").css("background-image", "url(" + bannerUrl + ")")
-	</script>
+	<% if (theme.banner.random) { %> 
+		<script>
+			function setBanner(){
+				var curDate = new Date().getMinutes()
+				var bannerUrl = sessionStorage['heny-blog-banner']
+				var cacheHours = +sessionStorage['heny-blog-banner-date'];
+				// 第一次和超时更换图片， 并且5分钟一换图片
+				if (isNaN(cacheHours) || (cacheHours !== curDate && curDate % 5 === 0)) {
+					cacheHours = sessionStorage['heny-blog-banner-date'] = curDate
+					bannerUrl = sessionStorage['heny-blog-banner'] =
+						"<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" +
+						Math.round(Math.random() * 24) +
+						".jpg"
+				}
+				$(".bg-img").css("background-image", "url(" + bannerUrl + ")")
+			}
+			setBanner()
+		</script>
+	<% } else { %> 
+		<script>
+			// 每天切换 banner 图.  Switch banner image every day.
+			var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" + new Date().getHours() + '.jpg';
+			$('.bg-img').css('background-image', 'url(' + bannerUrl + ')');
+		</script>
+	<% } %> 
 <% } else { %>
 	<script>
 		$('.bg-img').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/0.jpg') %>)');
