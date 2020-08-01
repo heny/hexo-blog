@@ -1,437 +1,125 @@
-<div class="navi-height bg-cover pd-header ">
-  <div class=" link-box container">
-      <!-- 搜索框 -->
-      <div class="baidu baidu-2 large-screen">
-          <form name="f" action="https://www.baidu.com/" target="_blank">
-              <div id="Select-2">
-                  <div class="Select-box-2" id="baidu">
-                      <ul style="height: 46px;">
-                          <li class="this_s">百 · 度</li>
-                          <li class="bing_s">必 · 应</li>
-                          <li class="google_s">谷 · 歌</li>
-                          <li class="baidu_s">百 · 度</li>
-                      </ul>
-                  </div> <input name="wd" id="kw-2" maxlength="100" autocomplete="off" type="text">
-              </div>
-              <div class="qingkong" id="qingkong" title="清 · 空" style="display: none;">x</div> <input value="搜 · 索"
-                  id="su-2" type="submit">
-              <ul class="keylist"></ul>
-          </form>
-      </div> <!-- 链接 -->
-      <div class="row tags-posts">
-          <% if (site.data && site.data.navigate ) { %>
-            <% site.data.navigate.forEach(nav => {%>
-              <div class="col s12 m6 l4 friend-div" data-aos="zoom-in-up">
-                  <div class="card">
-                      <div class="jj-list-tit"><%= nav.categorie %></div>
-                      <ul class="jj-list-con">
-                        <% nav.musicList.forEach( navItem => { %>
-                          <li><a href="<%- url_for(navItem.url) %>" class="link-3" target="_blank"><%= navItem.title %></a>
-                        <% }) %>
-                      </ul>
-                  </div>
-              </div>
-            <% }) %>
-          <% } %>
-      </div>
-      <script> 
-        /*选择搜索引擎*/ 
-        $('.Select-box ul').hover(
-          function () { 
-            $(this).css('height', 'auto') 
-          }, 
-          function () { 
-            $(this).css('height', '40px') 
-          }
-        );
 
-        $('.Select-box-2 ul').hover(
-          function () { 
-            $(this).css('height', 'auto') 
-          }, 
-          function () { 
-            $(this).css('height', '46px') 
-        }); 
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
 
-        $('.Select-box li').click(
-          function () { 
-            var _tihs = $(this).attr('class'); 
-            var _html = $(this).html(); 
-            if (_tihs == 'baidu_s') {
-               _tihs = 'https://www.baidu.com/s'; 
-               _name = 'wd'; 
-            } 
-            if (_tihs == 'google_s') {
-               _tihs = 'https://www.google.com/search';
-               _name = 'q'; 
-            } 
-            if (_tihs == 'bing_s') {
-               _tihs = 'https://www.bing.com/search';
-               _name = 'q'; 
-            } 
-            $('.baidu form').attr('action', _tihs); 
-            $('.this_s').html(_html); 
-            $('#kw').attr('name', _name); 
-            $('.Select-box ul').css('height', '40px') 
-          }
-        ); 
-        $('.Select-box-2 li').click(
-          function () { 
-            var _tihs = $(this).attr('class'); 
-            var _html = $(this).html(); 
-            if (_tihs == 'baidu_s') {
-                _tihs = 'https://www.baidu.com/s';
-                _name = 'wd'; 
-            } 
-            if (_tihs == 'google_s') {
-                _tihs = 'https://www.google.com/search';
-                _name = 'q'; 
-            } 
-            if (_tihs == 'bing_s') {
-                _tihs = 'https://www.bing.com/search';
-                _name = 'q'; 
-            } 
-            $('.baidu form').attr('action', _tihs);
-            $('.this_s').html(_html);
-            $('#kw-2').attr('name', _name);
-            $('.Select-box-2 ul').css('height', '48px') 
-          }
-        ); 
-        //清空输入框内容 
-        $('.qingkong').click(
-          function () { 
-            cls();
-            $(this).css('display', 'none')
-           }
-        ); 
-        function cls() { 
-          var sum = 0; 
-          var t = document.getElementsByTagName("INPUT");
-          for (var i = 0; i < t.length; i++) {
-             if (t[i].type == 'text') {
-               ++sum; t[i].value = "";
-               //清空 
-             } 
-          } 
-        } 
-        //清空输入框按钮的显示和隐藏 
-        function if_btn() { 
-          var btn_obj = document.getElementById("kw") || document.getElementById("kw-2"); 
-          var cls_btn = document.getElementById("qingkong"); 
-          var btn_obj_val; 
-          var times; 
-          //当元素获得焦点时 
-          if (btn_obj == '' || btn_obj == null) { 
-            return false; 
-            //如果没有找到这个元素，则将函数返回，不继续执行 
-          } 
-          btn_obj.onfocus = function () { 
-            times = setInterval(function () { 
-              btn_obj_val = btn_obj.value; 
-              if (btn_obj_val != 0) { 
-                cls_btn.style.display = "block"; 
-              } else { 
-                cls_btn.style.display = "none"; 
-              } 
-            }, 200); 
-          } 
-          //元素失去焦点时 
-          btn_obj.onblur = function () { 
-            clearInterval(times); 
-          } 
-        } 
-      </script>
-  </div>
+<div class="bg-img pd-header" style='height:auto;padding-top: 100px;'>
+  <div id="navigate">
+		<div class="navigate">
+			<!-- 标题栏 -->
+			<div class="navigate-header">
+				<div class="navigate-header__title">
+					<%= page.searchTitle %>
+				</div>
+				<div class="navigate-header__desc" id='jinrishici-sentence'>
+					正在加载中诗词...
+				</div>
+			</div>
+			<!-- 搜索框 -->
+			<div class="navigate-search">
+				<input 
+					type="text" 
+					class='navigate-search__input' 
+					placeholder='<%- page.search[0].placeholder %>' 
+					url='<%- page.search[0].url %>'>
+				<div class="navigate-search__btn">
+					<i class='fas fa-search'></i>
+				</div>
+			</div>
+			<!-- 搜索导航 -->
+			<ul class="navigate-search-menu">
+				<% if(page.search && page.search.length > 0) { %>
+					<% page.search.forEach((search, index) =>  { %>
+						<li 
+							class='navigate-search-menu__item <% if(index === 0) { %> active <% } %>'
+							title='<%- search.placeholder %>'
+							url='<%- search.url %>'
+						><%= search.name %></li>
+					<% }) %>
+				<% } %>
+			</ul>
+			<div style='padding: 10px;'></div>
+			<!-- 导航分类卡片 -->
+			<ul class="navigate-wrap clearfix tags-posts">
+				<% if (site.data && site.data.navigate ) { %>
+					<% site.data.navigate.forEach(nav => { %>
+						<li class='navigate-card'  data-aos="zoom-in-up">
+							<div class="navigate-card__title">
+								<%= nav.categorie %>
+							</div>
+							<div class="navigate-card__desc">
+								<%= nav.introduction %>
+							</div>
+							<!-- 导航列表 -->
+							<ul class="navigate-card__nav clearfix">
+								<% if (nav.navList && nav.navList.length > 0) { %>
+									<% nav.navList.forEach(curNav => { %> 
+										<li class="nav-item">
+										<!-- 如网站获取不到favicon请自行填写 -->
+										<img src="
+											<% if (!!curNav.favicon) { %>
+												<%- curNav.favicon %>
+											<% } else { %>
+												<%- 'https://i.olsh.me/icon?size=80..120..200&url=' + curNav.url %>
+											<% } %>
+										" alt="">
+											<a href="<%- curNav.url %>" target="_blank"><%= curNav.name %></a>
+										</li>
+									<% }) %> 
+								<% } %>
+							</ul>
+						</li>
+					<% }) %>
+				<% } %>
+			</ul>
+		</div>
+	</div>
 </div>
-<style>
-  * {
-      margin: 0;
-      padding: 0;
-      font-family: "微软雅黑"
-  }
-  ul,li,h1,h2,h3,h4,h5,h6,p,form,dl,dt,dd {
-      margin: 0px;
-      padding: 0px;
-      font-size: 14px;
-      font-weight: normal;
-  }
+<script>
+	// 点击搜索导航事件
+	function searchNav(){
+		var searchItem = $('.navigate-search-menu__item')
+		var inputEl = $('.navigate-search__input')
+		searchItem.click(function(){
+		// 切换active
+			searchItem.eq($(this).index()).addClass('active').siblings('li').removeClass('active')
+			// 改变input的提示内容, 并把url放入
+			inputEl.attr('placeholder', $(this).attr('title'))
+			inputEl.attr('url', $(this).attr('url'))
+		})
+	}
+	searchNav()
 
-  img {
-      border-style: none;
-  }
+	// 搜索事件
+	function handleSearch(){
+		var ipt = $('.navigate-search__input')
+		// 点击按钮事件搜索
+		$('.navigate-search__btn').click(function(){
+			var url = ipt.attr('url').replace('{query}', ipt.val())
+			window.open(url)
+			ipt.val('')
+		})
+		// 回事事件搜索
+		ipt.keydown(function(e){
+			if (e.keyCode === 13) {
+				var url = ipt.attr('url').replace('{query}', ipt.val())
+				window.open(url)
+				ipt.val('')
+			}
+		})
+	}
+	handleSearch()
 
-  li {
-      list-style: none;
-      float: left
-  }
-
-  a {
-      text-decoration: none
-  }
-
-  .card {
-      background-color: rgba(25, 240, 229, 0);
-      width: 96%;
-      margin-left: 2%
-  }
-
-  .baidu {
-      float: left;
-      margin-left: 100px;
-  }
-
-  .baidu form {
-      position: relative
-  }
-
-  .Select-box ul {
-      height: 40px;
-      position: absolute;
-      left: -1px;
-      top: 0px;
-      z-index: 9999;
-      background: #FFF;
-      border: 1px solid #ccc;
-      border-top: none;
-      overflow: hidden
-  }
-
-  .Select-box li {
-      width: 60px;
-      line-height: 40px;
-      font-size: 14px;
-      color: #484848;
-      border: 0;
-      cursor: pointer;
-  }
-
-  .Select-box li:hover {
-      background: #3385ff;
-      color: #FFF;
-  }
-
-  .Select-box .this_s {
-      color: #317ef3;
-  }
-
-  .Select-box .this_s:hover {
-      background: #FFF;
-      color: #317ef3;
-  }
-
-  .qingkong {
-      position: absolute;
-      right: 120px;
-      top: 12px;
-      width: 18px;
-      height: 18px;
-      background: rgba(0, 0, 0, 0.1);
-      border-radius: 18px;
-      line-height: 16px;
-      color: #666666;
-      cursor: pointer;
-      text-align: center;
-      font-size: 14px;
-      display: none;
-  }
-
-  .qingkong:hover {
-      background: rgba(0, 0, 0, 0.2);
-  }
-
-  .qingkong:active {
-      background: rgba(0, 0, 0, 0.3);
-  }
-
-  .baidu-2 {
-      width: 100%;
-      height: 110px;
-      margin: 0 auto;
-      background: none;
-      padding-top: 50px;
-  }
-
-  .baidu-2 form {
-      width: 520px;
-      margin: 0 auto;
-  }
-
-  .baidu-2 input {
-      padding: 13px 8px;
-      opacity: 0.9;
-      font-size: 15px;
-  }
-
-  #Select-2 {
-      float: left;
-  }
-
-  .Select-box-2 {
-      text-align: center;
-      float: left;
-      position: relative;
-  }
-
-  .Select-box-2 ul {
-      height: 46px;
-      position: absolute;
-      left: 0px;
-      top: 1px;
-      z-index: 9999;
-      background: rgba(255, 255, 255, 0.9);
-      border: 1px solid #ccc;
-      border-top: none;
-      overflow: hidden
-  }
-
-  .Select-box-2 li {
-      width: 60px;
-      line-height: 46px;
-      font-size: 15px;
-      color: #484848;
-      border: 0;
-      cursor: pointer;
-  }
-
-  .Select-box-2 li:hover {
-      background: #3385ff;
-      color: #FFF;
-  }
-
-  .Select-box-2 .this_s {
-      color: #317ef3;
-  }
-
-  .Select-box-2 .this_s:hover {
-      background: none;
-      color: #317ef3;
-  }
-
-  #kw-2 {
-      width: 335px;
-      outline: 0;
-      border: 1px solid #ccc;
-      background: rgba(255, 255, 255, 0.2);
-      color: #000000;
-      padding-left: 70px;
-      font-weight: bold;
-  }
-
-  /*修改搜索框样式*/
-  #su-2 {
-      width: 90px;
-      background: #4e6ef2;
-      border: none;
-      border-top: #3385ff 1px solid;
-      border-bottom: 1px solid #2d78f4;
-      color: #FFF;
-      cursor: pointer;
-      /*去轮廓阴影*/
-      outline: none;
-      height: 47px;
-  }
-
-  /*光标移动到搜索框颜色*/
-  #su-2:hover {
-      background: #4e6ef2;
-      border-bottom: 1px solid #4e6ef2;
-  }
-
-  #su-2:active {
-      background: #4e6ef2;
-      box-shadow: inset 1px 1px 3px #4e6ef2;
-      -webkit-box-shadow: inset 1px 1px 3px #4e6ef2;
-  }
-
-  .jj-list-tit {
-      font-size: 16px;
-      line-height: 25px;
-      color: #ffffff;
-      width: 100%;
-      padding-left: 38.5%;
-  }
-
-  .jj-list-con {
-      overflow: hidden;
-      margin: 0 auto
-  }
-
-  /*控制网站列表间距*/
-  .jj-list-con li {
-      width: 31.333%;
-      margin: 1%;
-  }
-
-  .link-3 {
-      display: block;
-      background: rgba(0, 0, 0, .35);
-      color: #FFF;
-      font-size: 13px;
-      text-align: center;
-      line-height: 35px;
-      padding: 4px 0;
-      border-radius: 2px;
-      transition: all 0.2s
-  }
-
-  .link-3:hover {
-      background: rgba(0, 0, 0, .45);
-      font-size: 15px;
-      font-weight: bold
-  }
-
-  /*1栏 小于584*/
-  @media only screen and (max-width: 584px) {
-      .navi-height {
-          height: 1300px;
-      }
-
-      .link-box {
-          margin-top: 5%;
-      }
-
-      .large-screen {
-          display: none;
-      }
-  }
-
-  /* 2栏 大于584 小于993px */
-  @media only screen and (min-width: 584px) and (max-width: 993px) {
-      .navi-height {
-          height: 800px;
-      }
-
-      .link-box {
-          margin-top: 5%;
-      }
-
-      .large-screen {
-          display: none;
-      }
-  }
-
-  /*3栏 大于993px*/
-  @media only screen and (min-width: 993px) {
-      .navi-height {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-      }
-  }
-
-  /* 隐藏footer */
-  .page-footer {
-      display: none;
-  }
-</style>
+</script>
 <% if (theme.banner.enable) { %>
-<script>
-  // 每天切换 banner 图.  Switch banner image every day.
-  var bannerUrl = "<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" + new Date().getHours() + '.jpg';
-  $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
+	<script>
+		// 每天切换 banner 图.  Switch banner image every day.
+		var bannerUrl =
+			"<%- theme.jsDelivr.url %><%- url_for('/medias/banner/') %>" +
+			new Date().getHours() +
+			".jpg"
+		$(".bg-img").css("background-image", "url(" + bannerUrl + ")")
+	</script>
 <% } else { %>
-<script>
-  $('.bg-cover').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/0.jpg') %>)');
-</script>
+	<script>
+		$('.bg-img').css('background-image', 'url(<%- theme.jsDelivr.url %><%- url_for('/medias/banner/0.jpg') %>)');
+	</script>
 <% } %>

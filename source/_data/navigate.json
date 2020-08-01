@@ -1,247 +1,232 @@
 [
   {
-    "categorie": "娱乐 · 影视",
-    "musicList": [
+    "categorie": "动漫",
+    "introduction": "",
+    "navList": [
       {
-        "title": "京东",
-        "url": "https://www.jd.com/"
+        "name": "AcFun（A站）",
+        "url": "https://www.acfun.cn/"
       },
       {
-        "title": "淘宝",
-        "url": "https://www.taobao.com/"
-      },
-      {
-        "title": "天猫",
-        "url": "https://www.tmall.com/"
-      },
-      {
-        "title": "腾讯视频",
-        "url": "https://v.qq.com/"
-      },
-      {
-        "title": "爱奇艺",
-        "url": "http://www.iqiyi.com/"
-      },
-      {
-        "title": "哔哩哔哩",
+        "name": "BiliBili（B站）",
         "url": "https://www.bilibili.com/"
       },
       {
-        "title": "网易云音乐",
-        "url": "https://music.163.com/"
+        "name": "CiliCili（C站）",
+        "url": "https://www.clicli.me/"
       },
       {
-        "title": "QQ音乐",
-        "url": "https://y.qq.com/"
+        "name": "DiliDili（D站）",
+        "url": "https://dilidili.online/"
       },
       {
-        "title": "酷狗音乐",
-        "url": "http://www.kugou.com/"
+        "name": "BimiBimi（M站）",
+        "url": "http://www.bimibimi.me/"
+      },
+      {
+        "name": "Pixivic（P站）",
+        "url": "https://pixivic.com/"
+      },
+      {
+        "name": "Pixiv（P站）",
+        "url": "https://www.pixiv.net/"
+      },
+      {
+        "name": "ZFun（Z站）",
+        "url": "http://www.zzzfun.com/"
+      },
+      {
+        "name": "樱花动漫",
+        "url": "http://www.imomoe.in/"
       }
     ]
   },
   {
-    "categorie": "社区 · Code",
-    "musicList": [
+    "categorie": "壁纸",
+    "introduction": "仅收集好用好看的壁纸",
+    "navList": [
       {
-        "title": "留言",
-        "url": "https://www.mobaijun.com/contact/"
-      },
-      {
-        "title": "GitHub",
-        "url": "https://github.com/"
-      },
-      {
-        "title": "Coding",
-        "url": "https://coding.net/"
-      },
-      {
-        "title": "掘金",
-        "url": "https://juejin.im/"
-      },
-      {
-        "title": "码云",
-        "url": "https://gitee.com/"
-      },
-      {
-        "title": "CSDN",
-        "url": "https://www.csdn.net/"
-      },
-      {
-        "title": "简书",
-        "url": "https://www.jianshu.com/"
-      },
-      {
-        "title": "思否",
-        "url": "https://segmentfault.com/"
-      },
-      {
-        "title": "云+社区",
-        "url": "https://cloud.tencent.com/developer/"
-      }
-    ]
-  },
-  {
-    "categorie": "实用 · 工具",
-    "musicList": [
-      {
-        "title": "Nice编辑器",
-        "url": "https://mdnice.com/"
-      },
-      {
-        "title": "谷歌翻译",
-        "url": "https://translate.google.cn/"
-      },
-      {
-        "title": "在线PS",
-        "url": "https://www.uupoop.com/"
-      },
-      {
-        "title": "思维导图",
-        "url": "https://www.processon.com/"
-      },
-      {
-        "title": "超清壁纸",
+        "name": "Wallhaven",
         "url": "https://wallhaven.cc/"
       },
       {
-        "title": "二维码",
-        "url": "https://cli.im/"
+        "name": "青青壁纸",
+        "favicon": "https://wallpaper.wispx.cn/favicon.ico",
+        "url": "https://wallpaper.wispx.cn/"
       },
       {
-        "title": "音范思",
+        "name": "4K动漫壁纸",
+        "url": "http://pic.netbian.com/4kdongman/"
+      },
+      {
+        "name": "10wallpaper",
+        "url": "https://10wallpaper.com/"
+      },
+      {
+        "name": "wallpapermaiden",
+        "url": "https://www.wallpapermaiden.com/"
+      },
+      {
+        "name": "商用壁纸",
+        "url": "https://undraw.co/illustrations"
+      },
+      {
+        "name": "回车桌面",
+        "url": "https://www.enterdesk.com/"
+      }
+    ]
+  },
+  {
+    "categorie": "影视",
+    "introduction": "视频、音乐常用",
+    "navList": [
+      {
+        "name": "音乐搜索器",
+        "url": "http://www.musictool.top/"
+      },
+      {
+        "name": "音范丝",
         "url": "http://www.yinfans.me/"
       },
       {
-        "title": "吾爱破解",
-        "url": "https://www.52pojie.cn/"
+        "name": "echo回声",
+        "url": "http://www.app-echo.com/#/"
       },
       {
-        "title": "OW分发",
-        "url": "https://my.openwrite.cn/"
+        "name": "MyFreeMp3",
+        "url": "http://tool.liumingye.cn/music/?page=homePage"
+      },
+      {
+        "name": "全网影视搜索",
+        "url": "http://lab.liumingye.cn/"
+      },
+      {
+        "name": "爱看影院",
+        "url": "http://ys.akmeng.icu/"
+      },
+      {
+        "name": "完美看看",
+        "url": "https://www.wanmeikk.me/"
+      },
+      {
+        "name": "独播",
+        "url": "https://www.duboku.co/"
+      },
+      {
+        "name": "真不卡电影",
+        "url": "https://www.zhenbuka.com/"
+      },
+      {
+        "name": "88影视",
+        "url": "https://www.88ys.com/"
       }
     ]
   },
   {
-    "categorie": "编程 · 学习",
-    "musicList": [
+    "categorie": "工具",
+    "introduction": "",
+    "navList": [
       {
-        "title": "开源中国",
-        "url": "https://www.oschina.net/"
+        "name": "在线工具",
+        "url": "https://tool.lu/"
       },
       {
-        "title": "HTML狗",
-        "url": "https://htmldog.com/"
+        "name": "兔二工具",
+        "url": "https://www.tool22.com/"
       },
       {
-        "title": "中国大学慕课",
-        "url": "https://www.icourse163.org/"
+        "name": "在线PS工具",
+        "url": "https://www.uupoop.com/"
       },
       {
-        "title": "慕课网",
-        "url": "https://www.imooc.com/"
+        "name": "搜搜GIF",
+        "url": "https://www.sosogif.com/tool/"
       },
       {
-        "title": "小程序",
-        "url": "http://www.wxapp-union.com/"
+        "name": "抠图神器",
+        "url": "https://www.remove.bg/zh/upload"
       },
       {
-        "title": "菜鸟教程",
-        "url": "https://www.runoob.com/"
+        "name": "以图搜番",
+        "url": "https://trace.moe/"
       },
       {
-        "title": "51CTO",
-        "url": "https://blog.51cto.com/"
+        "name": "在线图片压缩",
+        "url": "https://docsmall.com/"
       },
       {
-        "title": "实验楼",
-        "url": "https://www.shiyanlou.com/library/"
-      },
-      {
-        "title": "Spring",
-        "url": "https://spring.io/"
+        "name": "集装箱",
+        "url": "http://one.newday.me/"
       }
     ]
   },
   {
-    "categorie": "资讯 · 趋势",
-    "musicList": [
+    "categorie": "搜索",
+    "introduction": "百度网盘搜索工具",
+    "navList": [
       {
-        "title": "虎嗅",
-        "url": "https://www.huxiu.com/"
+        "name": "罗马盘",
+        "url": "https://www.luomapan.com/"
       },
       {
-        "title": "技术调查",
-        "url": "https://insights.stackoverflow.com/"
+        "name": "大力盘",
+        "url": "https://www.dalipan.com/"
       },
       {
-        "title": "摸鱼",
-        "url": "http://www.asciiworld.com/"
+        "name": "小可搜搜",
+        "url": "https://www.xiaokesoso.com/"
       },
       {
-        "title": "少数派",
-        "url": "https://sspai.com/"
+        "name": "小可搜搜",
+        "url": "https://www.xiaokesoso.com/"
       },
       {
-        "title": "WikeHom",
-        "url": "https://zh.wikihow.com/"
+        "name": "小昭搜索",
+        "url": "https://www.xiaozhaolaila.com/"
       },
       {
-        "title": "前端趋势",
-        "url": "https://www.awesomes.cn/rank?sort=hot"
+        "name": "迷思爱聚合",
+        "url": "http://hao.misiai.com/"
       },
       {
-        "title": "GitHub趋势",
-        "url": "https://github-trending.com/"
+        "name": "哎呀喂啊",
+        "url": "http://www.aiyoweia.com/"
       },
       {
-        "title": "编程趋势",
-        "url": "https://www.tiobe.com/"
+        "name": "FastSoso",
+        "url": "https://www.fastsoso.cn/"
       },
       {
-        "title": "Google趋势",
-        "url": "https://trends.google.com/"
-      }
-    ]
-  },
-  {
-    "categorie": "搜索 · 其他",
-    "musicList": [
-      {
-        "title": "谷歌镜像",
-        "url": "https://ac.scmor.com/"
+        "name": "尘心盘搜索",
+        "url": "https://pan.ischenxin.com/"
       },
       {
-        "title": "网盘搜索",
-        "url": "http://www.pansoso.com/"
+        "name": "西瓜搜搜",
+        "url": "http://www.xgsoso.com/"
       },
       {
-        "title": "音乐搜索",
-        "url": "http://tool.mkblog.cn/music/"
+        "name": "磁力星球",
+        "url": "https://www.cilixingqiu.com/"
       },
       {
-        "title": "电影天堂",
-        "url": "https://www.dytt8.net/"
+        "name": "雨花阁",
+        "url": "https://www.yhg333.xyz/"
       },
       {
-        "title": "代码图片",
-        "url": "https://carbon.now.sh/"
+        "name": "磁力星",
+        "url": "https://cilixing05.pw/"
       },
       {
-        "title": "Boos",
-        "url": "https://www.zhipin.com/"
+        "name": "超人搜索",
+        "url": "https://crso.club/"
       },
       {
-        "title": "图标库",
-        "url": "https://fontawesome.com/"
+        "name": "磁力岛",
+        "url": "https://btdoor.cc/"
       },
       {
-        "title": "在线工具",
-        "url": "https://www.qvdv.com/tools/qvdv-guid.html"
-      },
-      {
-        "title": "中国色",
-        "url": "http://zhongguose.com/"
+        "name": "磁力狗",
+        "url": "http://ciligou0.com/"
       }
     ]
   }
