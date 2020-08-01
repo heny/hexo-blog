@@ -127,6 +127,10 @@
     "introduction": "",
     "navList": [
       {
+        "name": "消息转发工具",
+        "url": "https://chat.heny.vip"
+      },
+      {
         "name": "在线工具",
         "url": "https://tool.lu/"
       },
