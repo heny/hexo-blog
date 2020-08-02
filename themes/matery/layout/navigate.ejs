@@ -105,6 +105,11 @@
 				ipt.val('')
 			}
 		})
+		// 阻止冒泡事件
+		ipt.click(function (e) {
+			e.stopPropagation();
+			e.preventDefault();
+		})
 	}
 	handleSearch()
 

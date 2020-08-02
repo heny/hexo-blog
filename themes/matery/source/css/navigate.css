@@ -234,6 +234,12 @@
   }
 }
 
+@media only screen and (min-width: 1920px) {
+  .navigate-card {
+    width: calc((100% - 64px) / 4);
+  }
+}
+
 .clearfix:after {
   content: "\00A0";
   display: block;

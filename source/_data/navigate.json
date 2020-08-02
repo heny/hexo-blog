@@ -1,7 +1,7 @@
 [
   {
     "categorie": "动漫",
-    "introduction": "",
+    "introduction": "ABCDEFG这些都是什么站",
     "navList": [
       {
         "name": "AcFun（A站）",
@@ -124,7 +124,7 @@
   },
   {
     "categorie": "工具",
-    "introduction": "",
+    "introduction": "在线工具、神器",
     "navList": [
       {
         "name": "消息转发工具",
@@ -161,6 +161,10 @@
       {
         "name": "集装箱",
         "url": "http://one.newday.me/"
+      },
+      {
+        "name": "运营工具大全",
+        "url": "https://xiaomark.com/tool"
       }
     ]
   },
@@ -231,6 +235,116 @@
       {
         "name": "磁力狗",
         "url": "http://ciligou0.com/"
+      }
+    ]
+  },
+  {
+    "categorie": "导航网",
+    "introduction": "一代大仙私人订制导航，解决百分之九十的社畜常见问题。从此摆脱乱七八糟的年费VIP！",
+    "navList": [
+      {
+        "name": "优聚集",
+        "url": "https://ujuji.com/"
+      },
+      {
+        "name": "i💖COOL",
+        "url": "https://icool.ujuji.com/"
+      },
+      {
+        "name": "Kilig",
+        "url": "https://kilig.ujuji.com"
+      },
+      {
+        "name": "Skr的宝藏",
+        "url": "https://skka.ujuji.com/"
+      },
+      {
+        "name": "舒颜的导航",
+        "url": "https://shuyan.ujuji.com/"
+      },
+      {
+        "name": "筱龙",
+        "url": "https://xiaolong.ujuji.com/"
+      },
+      {
+        "name": "Gforn",
+        "url": "https://gforn.ujuji.com/"
+      },
+      {
+        "name": "黑科技之家",
+        "url": "https://dxhkj.ujuji.com/"
+      },
+      {
+        "name": "硬币姬",
+        "url": "https://ybjdxmm.ujuji.com/"
+      },
+      {
+        "name": "百度",
+        "url": "https://baidus.ujuji.com/"
+      },
+      {
+        "name": "You 聚",
+        "url": "https://vnxn.ujuji.com/"
+      },
+      {
+        "name": "拾荒者",
+        "url": "https://shihuangzhe.ujuji.com/"
+      },
+      {
+        "name": "晓羽阁",
+        "url": "https://xiaoyu.ujuji.com/"
+      },
+      {
+        "name": "ABU",
+        "url": "https://abu001.ujuji.com/"
+      },
+      {
+        "name": "云之声",
+        "url": "https://thecloud.ujuji.com/"
+      },
+      {
+        "name": "一剑尘心",
+        "url": "https://mryang.ujuji.com/"
+      },
+      {
+        "name": "KC聚合站点",
+        "url": "https://kckc.ujuji.com/"
+      },
+      {
+        "name": "吾爱极客",
+        "url": "https://52jike.ujuji.com/"
+      },
+      {
+        "name": "音乐树下",
+        "url": "https://tiantian.ujuji.com/"
+      },
+      {
+        "name": "太优秀",
+        "url": "https://hqd666.ujuji.com/"
+      },
+      {
+        "name": "仗己",
+        "url": "https://hareguu.ujuji.com/"
+      },
+      {
+        "name": "luc的聚集",
+        "url": "https://liushuo.ujuji.com/"
+      },
+      {
+        "name": "南烛子",
+        "url": "https://phospherus.ujuji.com/"
+      },
+      {
+        "name": "奈奈小屋",
+        "url": "https://123tomoe.ujuji.com/"
+      },
+      {
+        "name": "影影",
+        "url": "https://ying.ujuji.com/"
+      },
+      {
+        "name": "百宝箱",
+        "url": "https://tian.ujuji.com/"
       }
     ]
   }
