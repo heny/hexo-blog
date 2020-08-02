@@ -113,16 +113,22 @@
       })
       daovoice("update")
     </script>
-    <% } %> <% if (theme.canvas_nest.enable) { %>
-    <script
-      type="text/javascript"
-      color="<%- theme.canvas_nest.color %>"
-      pointColor="<%- theme.canvas_nest.pointColor %>"
-      opacity="<%- theme.canvas_nest.opacity %>"
-      zIndex="<%- theme.canvas_nest.zIndex %>"
-      count="<%- theme.canvas_nest.count %>"
-      src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.canvas_nest) %>"
-    ></script>
+    <% } %> 
+    <% if (theme.canvas_nest.enable) { %>
+     <script>
+        // 小屏浏览器不应该展示
+        if($(window).width() > 768) {
+          document.writeln(`<script
+            type="text/javascript"
+            color="<%- theme.canvas_nest.color %>"
+            pointColor="<%- theme.canvas_nest.pointColor %>"
+            opacity="<%- theme.canvas_nest.opacity %>"
+            zIndex="<%- theme.canvas_nest.zIndex %>"
+            count="<%- theme.canvas_nest.count %>"
+            src="<%- theme.jsDelivr.url %><%- url_for(theme.libs.js.canvas_nest) %>"
+          ><\/script>`)
+        }
+    </script>
     <% } %> <% if (theme.ribbon.enable) { %> <% var ribbonSrc =
     theme.ribbon.clickChange ? theme.libs.js.ribbon :
     theme.libs.js.ribbonRefresh; %>

@@ -27,6 +27,18 @@ abbrlink:
   alog: crc16
   rep: hex
 
+
+# 外链跳转
+hexo_external_link:
+  enable: true
+  enable_base64_encode: true
+  url_param_name: 'u'
+  html_file_name: 'go.html'
+  target_blank: true
+  link_rel: 'external nofollow noopener noreferrer'
+  domain: 'blog.hrhe.cn' # 如果开启了防盗链，填写你的域名
+  safety_chain: false
+
 # Directory
 source_dir: source
 public_dir: public

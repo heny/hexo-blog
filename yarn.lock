@@ -1292,6 +1292,11 @@ hexo-deployer-git@^2.1.0:
     moment "^2.18.0"
     swig-templates "^2.0.2"
 
+hexo-external-link@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.npm.taobao.org/hexo-external-link/download/hexo-external-link-1.0.8.tgz#3b7abfc3479371074560d5a231792fb74e45a491"
+  integrity sha1-O3q/w0eTcQdFYNWiMXkvt05FpJE=
+
 hexo-filter-github-emojis@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npm.taobao.org/hexo-filter-github-emojis/download/hexo-filter-github-emojis-2.1.0.tgz#c493ef3db2ab25553db85d143cc73a65ec52ccc1"
