@@ -1,5 +1,97 @@
 [
   {
+    "categorie": "工具",
+    "introduction": "在线工具、神器",
+    "navList": [
+      {
+        "name": "消息转发工具",
+        "url": "https://chat.heny.vip"
+      },
+      {
+        "name": "在线工具",
+        "url": "https://tool.lu/"
+      },
+      {
+        "name": "兔二工具",
+        "url": "https://www.tool22.com/"
+      },
+      {
+        "name": "在线PS工具",
+        "url": "https://www.uupoop.com/"
+      },
+      {
+        "name": "搜搜GIF",
+        "url": "https://www.sosogif.com/tool/"
+      },
+      {
+        "name": "抠图神器",
+        "url": "https://www.remove.bg/zh/upload"
+      },
+      {
+        "name": "以图搜番",
+        "url": "https://trace.moe/"
+      },
+      {
+        "name": "在线图片压缩",
+        "url": "https://docsmall.com/"
+      },
+      {
+        "name": "集装箱",
+        "url": "http://one.newday.me/"
+      },
+      {
+        "name": "JS加密",
+        "url": "https://www.sojson.com/jsobfuscator.html"
+      },
+      {
+        "name": "前端库",
+        "url": "https://www.javascript.fun/"
+      },
+      {
+        "name": "运营工具大全",
+        "url": "https://xiaomark.com/tool"
+      }
+    ]
+  },
+  {
+    "categorie": "IT学习",
+    "introduction": "IT视频学习网、下载IT视频",
+    "navList": [
+      {
+        "name": "IT学习站",
+        "url": "http://www.137zw.com/"
+      },
+      {
+        "name": "IT教程吧",
+        "url": "https://www.itjc8.com/"
+      },
+      {
+        "name": "自学IT吧",
+        "url": "http://www.zxit8.com/"
+      },
+      {
+        "name": "IT视频学习网",
+        "url": "https://www.itspxx.com/"
+      },
+      {
+        "name": "资源喵",
+        "url": "https://www.aeui.cn/forum.php"
+      },
+      {
+        "name": "慕课网",
+        "url": "https://coding.imooc.com/?c=fe"
+      },
+      {
+        "name": "开课吧",
+        "url": "https://www.kaikeba.com/"
+      },
+      {
+        "name": "网易云课堂",
+        "url": "https://study.163.com/"
+      }
+    ]
+  },
+  {
     "categorie": "动漫",
     "introduction": "ABCDEFG这些都是什么站",
     "navList": [
@@ -45,6 +137,10 @@
     "categorie": "壁纸",
     "introduction": "仅收集好用好看的壁纸",
     "navList": [
+      {
+        "name": "图标下载",
+        "url": "https://www.easyicon.net/"
+      },
       {
         "name": "Wallhaven",
         "url": "https://wallhaven.cc/"
@@ -119,56 +215,6 @@
       {
         "name": "88影视",
         "url": "https://www.88ys.com/"
-      }
-    ]
-  },
-  {
-    "categorie": "工具",
-    "introduction": "在线工具、神器",
-    "navList": [
-      {
-        "name": "消息转发工具",
-        "url": "https://chat.heny.vip"
-      },
-      {
-        "name": "在线工具",
-        "url": "https://tool.lu/"
-      },
-      {
-        "name": "图标下载",
-        "url": "https://www.easyicon.net/"
-      },
-      {
-        "name": "兔二工具",
-        "url": "https://www.tool22.com/"
-      },
-      {
-        "name": "在线PS工具",
-        "url": "https://www.uupoop.com/"
-      },
-      {
-        "name": "搜搜GIF",
-        "url": "https://www.sosogif.com/tool/"
-      },
-      {
-        "name": "抠图神器",
-        "url": "https://www.remove.bg/zh/upload"
-      },
-      {
-        "name": "以图搜番",
-        "url": "https://trace.moe/"
-      },
-      {
-        "name": "在线图片压缩",
-        "url": "https://docsmall.com/"
-      },
-      {
-        "name": "集装箱",
-        "url": "http://one.newday.me/"
-      },
-      {
-        "name": "运营工具大全",
-        "url": "https://xiaomark.com/tool"
       }
     ]
   },
