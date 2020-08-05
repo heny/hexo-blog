@@ -48,6 +48,14 @@
         "url": "https://www.javascript.fun/"
       },
       {
+        "name": "正则可视化图形工具",
+        "url": "https://jex.im/regulex"
+      },
+      {
+        "name": "正则可视化工具",
+        "url": "https://aoxiaoqiang.github.io/reg/"
+      },
+      {
         "name": "运营工具大全",
         "url": "https://xiaomark.com/tool"
       }
@@ -130,6 +138,18 @@
       {
         "name": "樱花动漫",
         "url": "http://www.imomoe.in/"
+      },
+      {
+        "name": "動漫花園",
+        "url": "http://dmhy.ye1213.com/"
+      },
+      {
+        "name": "番组计划",
+        "url": "http://bgm.tv/"
+      },
+      {
+        "name": "漫猫动漫BT",
+        "url": "http://www.comicat.org/"
       }
     ]
   },
@@ -395,6 +415,68 @@
       {
         "name": "百宝箱",
         "url": "https://tian.ujuji.com/"
+      }
+    ]
+  },
+  {
+    "categorie": "博客",
+    "introduction": "大佬的博客网站",
+    "navList": [
+      {
+        "name": "心谭博客",
+        "url": "https://xin-tan.com/"
+      },
+      {
+        "name": "阮一峰的网络日志",
+        "url": "http://www.ruanyifeng.com/blog/"
+      },
+      {
+        "name": "阮一峰标准参考教程",
+        "url": "https://javascript.ruanyifeng.com/"
+      },
+      {
+        "name": "网道JavaScript",
+        "url": "https://wangdoc.com/javascript/index.html"
+      },
+      {
+        "name": "网道Bash脚本教程",
+        "url": "https://wangdoc.com/bash/"
+      },
+      {
+        "name": "前端进阶之道",
+        "url": "https://yuchengkai.cn/"
+      },
+      {
+        "name": "木易杨前端进阶",
+        "url": "https://muyiy.vip/"
+      },
+      {
+        "name": "菜鸟教程",
+        "url": "https://www.runoob.com/"
+      },
+      {
+        "name": "前端进阶Blog",
+        "url": "https://github.com/Geek-James/Blog"
+      },
+      {
+        "name": "全栈修炼",
+        "url": "https://biaochenxuying.github.io/blog/"
+      },
+      {
+        "name": "前端工匠",
+        "url": "https://github.com/ljianshu/Blog"
+      },
+      {
+        "name": "IT笔录",
+        "url": "https://itbilu.com/"
+      },
+      {
+        "name": "算法 101",
+        "url": "https://101.zoo.team/"
+      },
+      {
+        "name": "Frontend Wingman",
+        "url": "https://www.frontendwingman.com/"
       }
     ]
   }
