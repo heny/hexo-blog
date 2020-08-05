@@ -479,5 +479,201 @@
         "url": "https://www.frontendwingman.com/"
       }
     ]
+  },
+  {
+    "categorie": "UI 框架",
+    "introduction": "为了便携开发，你应该知道的一些UI框架",
+    "navList": [
+      {
+        "name": "Ant Design",
+        "url": "https://ant-design.gitee.io/index-cn"
+      },
+      {
+        "name": "Ant Design Mobile",
+        "url": "https://antd-mobile.gitee.io/index-cn"
+      },
+      {
+        "name": "Element",
+        "url": "https://element.eleme.cn/#/zh-CN"
+      },
+      {
+        "name": "vue-beauty2",
+        "url": "https://fe-driver.github.io/vue-beauty/#/components/progress"
+      },
+      {
+        "name": "Bootstrap",
+        "url": "http://www.bootcss.com/"
+      },
+      {
+        "name": "VUX",
+        "url": "https://doc.vux.li/zh-CN/"
+      },
+      {
+        "name": "layui",
+        "url": "https://www.layui.com/"
+      },
+      {
+        "name": "layer弹出层插件",
+        "url": "http://layer.layui.com/"
+      },
+      {
+        "name": "SuperSlide 大话主席",
+        "url": "http://www.superslide2.com/"
+      },
+      {
+        "name": "Ionic Documentation",
+        "url": "https://ionicframework.com/docs/components/?tdsourcetag=s_pcqq_aiomsg"
+      },
+      {
+        "name": "Mint UI",
+        "url": "http://mint-ui.github.io/#!/zh-cn"
+      },
+      {
+        "name": "iView",
+        "url": "https://www.iviewui.com/docs/guide/install"
+      },
+      {
+        "name": "Vant",
+        "url": "https://vant-contrib.gitee.io/vant/#/zh-CN/"
+      },
+      {
+        "name": "Tailwind CSS",
+        "url": "https://www.tailwindcss.cn/"
+      }
+    ]
+  },
+  {
+    "categorie": "官方文档",
+    "introduction": "前端必备的官方文档",
+    "navList": [
+      {
+        "name": "ECMAScript6",
+        "url": "http://es6.ruanyifeng.com/"
+      },
+      {
+        "name": "MDN Web 文档",
+        "url": "https://developer.mozilla.org/zh-CN/"
+      },
+      {
+        "name": "w3school 在线教程",
+        "url": "http://www.w3school.com.cn/"
+      },
+      {
+        "name": "jQuery API 中文文档",
+        "url": "http://jquery.cuishifeng.cn/index.html"
+      },
+      {
+        "name": "Axios",
+        "url": "https://www.kancloud.cn/yunye/axios/234845"
+      },
+      {
+        "name": "Node.js 中文网",
+        "url": "http://nodejs.cn/api/"
+      },
+      {
+        "name": "Mongoose 5.0 中文文档",
+        "url": "http://mongoosejs.net/docs/guide.html"
+      },
+      {
+        "name": "Express",
+        "url": "http://www.expressjs.com.cn/"
+      },
+      {
+        "name": "RSSHub",
+        "url": "https://docs.rsshub.app/#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"
+      },
+      {
+        "name": "TypeScript入门教程",
+        "url": "https://ts.xcatliu.com/"
+      },
+      {
+        "name": "mpvue",
+        "url": "http://mpvue.com/mpvue/"
+      },
+      {
+        "name": "MessAPI",
+        "url": "https://messoer.github.io/mess-api-doc/#/"
+      },
+      {
+        "name": "Lodash 中文文档",
+        "url": "https://www.lodashjs.com/docs/latest"
+      },
+      {
+        "name": "CreateJS中文网",
+        "url": "http://www.createjs.cc/"
+      },
+      {
+        "name": "Vue Test Utils",
+        "url": "https://vue-test-utils.vuejs.org/zh/guides/#%E8%B5%B7%E6%AD%A5"
+      },
+      {
+        "name": "vue.js",
+        "url": "https://cn.vuejs.org/v2/guide/"
+      },
+      {
+        "name": "VuePress",
+        "url": "https://vuepress.vuejs.org/zh/guide/#%E7%89%B9%E6%80%A7"
+      },
+      {
+        "name": "深入浅出 Webpack",
+        "url": "http://webpack.wuhaolin.cn/"
+      },
+      {
+        "name": "React",
+        "url": "https://zh-hans.reactjs.org/"
+      },
+      {
+        "name": "Pug 中文文档",
+        "url": "https://pug.bootcss.com/api/getting-started.html"
+      },
+      {
+        "name": "CoffeeScript",
+        "url": "http://coffee-script.org/"
+      },
+      {
+        "name": "gulp.js",
+        "url": "https://www.gulpjs.com.cn/"
+      },
+      {
+        "name": "Deno",
+        "url": "https://nugine.github.io/deno-manual-cn/introduction.html"
+      },
+      {
+        "name": "EJS",
+        "url": "https://ejs.bootcss.com/"
+      },
+      {
+        "name": "Flutter中文网",
+        "url": "https://flutterchina.club/get-started/install/"
+      },
+      {
+        "name": "Parcel 中文网打包",
+        "url": "https://parceljs.org/"
+      },
+      {
+        "name": "美洽客服",
+        "url": "https://www.meiqia.com/"
+      },
+      {
+        "name": "Koa (koajs) ",
+        "url": "https://koa.bootcss.com/"
+      },
+      {
+        "name": "Reach Router",
+        "url": "https://reach.tech/router/"
+      },
+      {
+        "name": "Electron",
+        "url": "https://electronjs.org/"
+      },
+      {
+        "name": "GraphQL",
+        "url": "https://graphql.js.cool/"
+      },
+      {
+        "name": "DPlayer",
+        "url": "http://dplayer.js.org/zh/guide.html#special-thanks"
+      }
+    ]
   }
 ]
