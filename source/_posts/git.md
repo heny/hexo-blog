@@ -1,14 +1,4 @@
----
-abbrlink: a89f
-title: git
-cover: true
-summary: git常用记录
-categories: git
-top: true
-tags:
-   - git
-   - vscode
----
+# git
 ## 一、配置ssh
 1. 设置user name和email
 ```sh
@@ -397,7 +387,10 @@ git log --format='%aN' | sort -u | while read name; do echo -en "$name\t"; git l
   git push
   ```
 
-  
+
+### 打造自己的git bash
+
+[https://blog.csdn.net/Dancer__Sky/article/details/81632640](https://blog.csdn.net/Dancer__Sky/article/details/81632640)
 
 
 
@@ -483,13 +476,21 @@ X: 未知状态(很可能是遇到git的bug了，你可以向git提交bug report
 
 ### git graph
 
-方便查看git分支提交记录，可以直接基于log创建一个新的分支
+方便查看git分支提交记录，可以直接基于一个log创建一个新的分支、
 
-![img](https://raw.githubusercontent.com/mhutchie/vscode-git-graph/master/resources/demo.gif)
+![image-20200814102540364](C:/Users/Administrator/AppData/Roaming/Typora/typora-user-images/image-20200814102540364.png)
 
-打开方式看如下：
 
-![image-20200729003318782](https://notecdn.heny.vip/images/image-20200729003318782.png)
+
+两种打开方式：
+
+![image-20200729003318782](https://notecdn.heny.vip/images/image-20200729003318782.png)![image-20200814102618851](https://notecdn.heny.vip/images/image-20200814102618851.png)
+
+
+
+
+
+
 
 
 
