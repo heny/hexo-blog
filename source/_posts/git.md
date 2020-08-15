@@ -1,3 +1,15 @@
+---
+abbrlink: a89f
+title: git
+cover: true
+pageImg: https://notecdn.heny.vip/favicon.ico
+summary: git常用记录
+categories: git
+top: true
+tags:
+   - git
+   - vscode
+---
 # git
 ## 一、配置ssh
 1. 设置user name和email
